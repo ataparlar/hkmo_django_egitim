@@ -1,0 +1,12 @@
+{% load static %}
+
+<h1>NAVBAR</h1>
+
+<img src="{% static 'img/hkmo.png' %}">
+<br>
+
+<a href="{% url 'main_view' %}">Ana Sayfa</a>
+<br>
+<a href="{% url 'board_view' %}">Yönetim Kurulu</a>
+<br>
+<a href="{% url 'blog_view' %}">Blog Sayfası</a>

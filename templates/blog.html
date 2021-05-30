@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+
+{% block body %}
+
+
+
+    <h1>BLOG SAYFASI</h1>
+    <br>
+
+    {% for post in posts %}
+        <br>
+        <h2>{{ post.header }}</h2>
+        <br>
+        <h4>{{ post.text }}</h4>
+        <br>
+        <h4>{{ post.author }}</h4>
+        <br>
+        <h4>{{ post.date }}</h4>
+        <br>
+        <hr>
+
+    {% endfor %}
+
+
+
+
+{% endblock body %}
+
